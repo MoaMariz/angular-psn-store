@@ -1,0 +1,18 @@
+<div class="div container__card-pricing">
+    <div class="card-pricing__title">
+      <h3>Play it Now!</h3>
+    </div>
+    <div class="card-pricing__value">
+      <div class="card-pricing__value-console">
+        <span>|</span>
+        <p class="console-list">{{gameType}}</p>
+      </div>
+      <div class="card-pricing__value-cost">
+        <p class="game-price-promo" *ngIf="gamePricePromo">{{gamePricePromo}}</p>
+        <p
+          class="game-price"
+          [ngStyle]="{'text-decoration': promoTextTransform}"
+        >{{gamePrice}}</p>
+      </div>
+    </div>
+  </div>

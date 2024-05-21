@@ -1,0 +1,20 @@
+<a href="" class="container__card">
+  <img
+    class="card__img"
+    [src]="gameCover"
+    alt="">
+  <app-card-label 
+    [labelTag]="labelTag"
+    [labelColor]="labelColor"
+    [labelText]="labelText"
+    [labelSpacing]="labelSpacing"
+    >
+  </app-card-label>
+  <app-card-promo *ngIf="promoSwitch"></app-card-promo>
+  <app-card-pricing 
+    [gamePricePromo]="gamePricePromo"
+    [gameType]="gameType"
+    [gamePrice]="gamePrice"
+    >
+  </app-card-pricing>
+</a>
